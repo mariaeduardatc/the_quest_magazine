@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    color: black;
+}
+
+html{
+    --decoration-color: rgb(190, 190, 190);
+    --whitesmoke-color: whitesmoke;
+    --black-color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    position: sticky;
+    top:0;
+    padding: 2rem;
+    background: var(--black-color);
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', monospace;
+}
+
+
+img {
+    width: 100%; /* means the image will be relative to the box it is contained */
+}
+
+img.logo{
+    width: 60px;
+    height: 60px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: .8rem;
+}
+
+ul li a{
+    color: var(--whitesmoke-color);
+}
+
+ul li a.contact{
+    background: var(--whitesmoke-color);
+    color: var(--black-color);
+    padding: .7rem;
+    border-radius: 5%;
+}
+
+ul li a.contact:hover{
+    background: var(--decoration-color);
+}
+
+.heading{
+    font-size: 300%;
+    font-family: sans-serif;
+    
+    display: flex;  
+    gap: 100px;
+
+    padding: 230px;
+    padding-left: 60px;
+    margin-top: 10px;
+    border: 2px solid;
+}
+
+
+.name img{
+    width: 80px;
+    height: 80px;
+}
+
+.body{
+    font-family: "Roboto", monospace;
+}
+
+.issue{
+    margin-bottom: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.issue h1, p, mark{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    margin: 10px auto;
+}
+
+.issue h1{
+    padding: 30px;
+}
+
+mark{
+    background-color: var(--decoration-color);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 30px;
+}
+
+.container aside {
+    flex-basis: 35%;
+    align-items: center;
+}
+
+.container main{
+    flex: 1;
+}
+
+.container main h3, p{
+    width: inherit;
+}
+
+.container aside img{
+    border: 1px solid;
+}
+
+footer.email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px;
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 0.6;
+    transition: opacity 400ms;
+}
+
+footer.email img{
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+footer:hover{
+    opacity: 1;
+}
+
+
+
+
+
+
+#about{
+    background-color: var(--black-color);
+}
+
+#about header{
+    background: var(--whitesmoke-color);
+}
+
+#about ul li a{
+    color: var(--black-color);
+}
+
+#about ul li a.contact{
+    background: var(--black-color);
+    color: var(--whitesmoke-color);
+}
+
+#about ul li a.contact:hover{
+    background: var(--decoration-color);
+}
+
+#about footer.email a{
+    color: var(--whitesmoke-color);
+}
+
+#about div.heading, #about .name h1{
+    color: var(--whitesmoke-color);
+}
+
+.team{
+    display: flex;
+    gap: 10px;
+    
+    text-align: center;
+    margin: 60px auto;
+}
+
+.team p{
+    color: var(--whitesmoke-color);
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+    opacity: 0.8;
+    font-size: 14px;
+    text-align:justify;
+
+    margin: 20px;
+}
+
+#about .team img.avatar{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 4px;
+    border: var(--whitesmoke-color) solid 4px;
+}
+
+#about .team h1{
+    font-size: 32px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    color: var(--whitesmoke-color);
+}
+
+p.description{
+    font-size: 12px;
+}
+
+.empty{
+    padding: 300px;
+}
