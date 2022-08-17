@@ -144,6 +144,21 @@ mark{
     border: 1px solid;
 }
 
+
+.credits{
+    text-align: center;
+    font-family: 'Lora';
+    list-style: none;
+}
+
+.credits h3, .credits p, .credits li, .credits a{
+    color:rgb(88, 88, 88);
+}
+
+.credits a:hover{
+    color: black;
+}
+
 footer.email{
     display: flex;
     flex-direction: column;
@@ -203,12 +218,15 @@ footer:hover{
 }
 
 .team{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 10px;
     
     text-align: center;
-    margin: 60px auto;
+    margin: 60px;
 }
+
+
 
 .team p{
     color: var(--whitesmoke-color);
@@ -244,19 +262,6 @@ p.description{
     padding: 300px;
 }
 
-.credits{
-    text-align: center;
-    font-family: 'Lora';
-    list-style: none;
-}
-
-.credits h3, .credits p, .credits li, .credits a{
-    color:rgb(88, 88, 88);
-}
-
-.credits a:hover{
-    color: black;
-}
 
 /* ART PAGE */
 
